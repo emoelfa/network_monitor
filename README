@@ -1,0 +1,29 @@
+# Network Monitor
+
+## Description
+
+This application gathers network connection information (active and past connectivity from logs) and checks the unique public network information against a threat intelligence platform.
+
+## Setup
+
+1. Clone the repository.
+2. Create a virtual environment and install dependencies:
+    ```sh
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    ```
+3. Replace `YOUR_ABUSEIPDB_API_KEY` in `src/threat_intelligence.py` with your actual API key.
+
+## Usage
+
+Run the application:
+```sh
+python src/main.py
+
+
+### Final Notes
+
+- Ensure to replace the `/path/to/your/logfile.log` with the actual path to your log file.
+- Obtain an API key from AbuseIPDB or another threat intelligence service you choose to use.
+
